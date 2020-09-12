@@ -94,7 +94,6 @@ function shortCuts()
                   document.exitPointerLock();
         `);
 	})
-	console.log('Shortcuts has been registered')
 }
 
 //Funktion damit die Linkbox erstellt wird
