@@ -739,7 +739,7 @@
             -460,
             -570,
             -460,
-            140
+            120
           ],
           "alignment": [
             0.5,
@@ -786,7 +786,7 @@
       "tags": [
         "DesktopOnly"
       ],
-      "enabled": false,
+      "enabled": true,
       "resource_id": "2baa7f22-cb28-4cbb-a175-55b8d4385c6f",
       "parent": "06c5ec69-e469-4a9c-8d86-1f10ab8e0412",
       "children": [
@@ -804,9 +804,9 @@
         0
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.8,
+        0.8,
+        0.8
       ],
       "components": {
         "element": {
@@ -848,7 +848,7 @@
           "height": 110,
           "margin": [
             -500,
-            20,
+            10,
             -500,
             -130
           ],
