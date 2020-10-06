@@ -57,7 +57,7 @@ function createInitWindow(url, isFullScreen, Size, isMain) {
         rpc.on("ready", () => {
             rpc.setActivity({
                 largeImageKey: 'nexi-client',
-                details: `NeXi-Client`,
+                details: `NeXi-Client 1.2.9`,
                 state: `Started Playing`,
             })
 
