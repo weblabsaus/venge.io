@@ -77,10 +77,15 @@ function createInitWindow(url, isFullScreen, Size, isMain) {
                 if (url.indexOf('index.html#')!== -1){
                     let arr1 = url.split('#');
                     let inviteCode = arr1[arr1.length - 1];
-                    let arr2 = [undefined];
-                    arr2[arr2.length - 1] = `https://venge.io/#${inviteCode}`;
-                    url = arr2;
-                    activity = 'Playing Venge.io!';
+                    if (inviteCode !== null){
+                        let arr2 = [undefined];
+                        arr2[arr2.length - 1] = `https://venge.io/#${inviteCode}`;
+                        url = arr2;
+                        activity = 'Playing Venge.io!';
+                    }
+                    else {
+                        url = rpc.user.username;  
+                    }
                 }
                 else {
                     if (url.indexOf('index.html') !== -1){
@@ -139,9 +144,6 @@ function createInitWindow(url, isFullScreen, Size, isMain) {
                   document.exitPointerLock();
 		`);
     })
-    shortcut.register(initWin, '=', () => {
-            createInitWindow('https://social.venge.io', false, 0.9, false)
-        })
     shortcut.register(initWin, 'F10', ()=> {
         createSettingsWindow();
     })
